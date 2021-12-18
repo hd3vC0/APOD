@@ -6,8 +6,14 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewControllers/HomeViewController.h"
+#import "Configurations/ConfigServices.h"
+#import "Configurations/ConfigUseCases.h"
+
 
 @interface AppDelegate ()
+
+-(void) loadConfigurations;
 
 @end
 
@@ -15,7 +21,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self loadConfigurations];
+    
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    UIViewController * vc = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    self.window.rootViewController = self.navigationController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -36,5 +51,10 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
+#pragma mark - Load configirations
+-(void)loadConfigurations{
+    [ConfigServices registerServices];
+    [ConfigUseCases registerUseCases];
+}
 
 @end

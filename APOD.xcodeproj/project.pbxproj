@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8131631F276D8D090028CADC /* AFNetworkingHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8131631E276D8D090028CADC /* AFNetworkingHttpManager.m */; };
+		81316325276DA16D0028CADC /* ConfigServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316324276DA16D0028CADC /* ConfigServices.m */; };
+		81316328276DAE070028CADC /* ConfigUseCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316327276DAE070028CADC /* ConfigUseCases.m */; };
+		8131632C276DB4D20028CADC /* AstronomyPictureResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8131632B276DB4D20028CADC /* AstronomyPictureResponse.m */; };
 		81608A62276AFBFF00AF2C88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A61276AFBFF00AF2C88 /* AppDelegate.m */; };
 		81608A65276AFBFF00AF2C88 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A64276AFBFF00AF2C88 /* SceneDelegate.m */; };
-		81608A68276AFBFF00AF2C88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A67276AFBFF00AF2C88 /* ViewController.m */; };
-		81608A6B276AFBFF00AF2C88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81608A69276AFBFF00AF2C88 /* Main.storyboard */; };
 		81608A6D276AFC0000AF2C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81608A6C276AFC0000AF2C88 /* Assets.xcassets */; };
 		81608A70276AFC0000AF2C88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81608A6E276AFC0000AF2C88 /* LaunchScreen.storyboard */; };
 		81608A73276AFC0000AF2C88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A72276AFC0000AF2C88 /* main.m */; };
 		81608A7D276AFC0000AF2C88 /* APODTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A7C276AFC0000AF2C88 /* APODTests.m */; };
 		81608A87276AFC0000AF2C88 /* APODUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A86276AFC0000AF2C88 /* APODUITests.m */; };
 		81608A89276AFC0000AF2C88 /* APODUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A88276AFC0000AF2C88 /* APODUITestsLaunchTests.m */; };
+		81608AA2276B0D0200AF2C88 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608AA0276B0D0200AF2C88 /* HomeViewController.m */; };
+		81608AA3276B0D0200AF2C88 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81608AA1276B0D0200AF2C88 /* HomeViewController.xib */; };
+		81608AA6276B122F00AF2C88 /* AstronomyPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608AA5276B122F00AF2C88 /* AstronomyPicture.m */; };
+		81BEA427276BF35A00059DCC /* RetrievePicturesWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA426276BF35A00059DCC /* RetrievePicturesWeek.m */; };
+		81BEA42C276BF74C00059DCC /* APODService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA42B276BF74C00059DCC /* APODService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +44,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8131631D276D8D090028CADC /* AFNetworkingHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHttpManager.h; sourceTree = "<group>"; };
+		8131631E276D8D090028CADC /* AFNetworkingHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHttpManager.m; sourceTree = "<group>"; };
+		81316320276D8DF80028CADC /* HttpRequestManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequestManagerDelegate.h; sourceTree = "<group>"; };
+		81316323276DA16D0028CADC /* ConfigServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigServices.h; sourceTree = "<group>"; };
+		81316324276DA16D0028CADC /* ConfigServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigServices.m; sourceTree = "<group>"; };
+		81316326276DAE070028CADC /* ConfigUseCases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfigUseCases.h; sourceTree = "<group>"; };
+		81316327276DAE070028CADC /* ConfigUseCases.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigUseCases.m; sourceTree = "<group>"; };
+		8131632A276DB4D20028CADC /* AstronomyPictureResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AstronomyPictureResponse.h; sourceTree = "<group>"; };
+		8131632B276DB4D20028CADC /* AstronomyPictureResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AstronomyPictureResponse.m; sourceTree = "<group>"; };
+		8131632D276DB7290028CADC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		81608A5D276AFBFF00AF2C88 /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81608A60276AFBFF00AF2C88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81608A61276AFBFF00AF2C88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		81608A63276AFBFF00AF2C88 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		81608A64276AFBFF00AF2C88 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		81608A66276AFBFF00AF2C88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		81608A67276AFBFF00AF2C88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		81608A6A276AFBFF00AF2C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81608A6C276AFC0000AF2C88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81608A6F276AFC0000AF2C88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81608A71276AFC0000AF2C88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +68,16 @@
 		81608A82276AFC0000AF2C88 /* APODUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APODUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81608A86276AFC0000AF2C88 /* APODUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODUITests.m; sourceTree = "<group>"; };
 		81608A88276AFC0000AF2C88 /* APODUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODUITestsLaunchTests.m; sourceTree = "<group>"; };
+		81608A9F276B0D0200AF2C88 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		81608AA0276B0D0200AF2C88 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		81608AA1276B0D0200AF2C88 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		81608AA4276B122F00AF2C88 /* AstronomyPicture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AstronomyPicture.h; sourceTree = "<group>"; };
+		81608AA5276B122F00AF2C88 /* AstronomyPicture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AstronomyPicture.m; sourceTree = "<group>"; };
+		81BEA425276BF35A00059DCC /* RetrievePicturesWeek.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetrievePicturesWeek.h; sourceTree = "<group>"; };
+		81BEA426276BF35A00059DCC /* RetrievePicturesWeek.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetrievePicturesWeek.m; sourceTree = "<group>"; };
+		81BEA42A276BF74C00059DCC /* APODService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODService.h; sourceTree = "<group>"; };
+		81BEA42B276BF74C00059DCC /* APODService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODService.m; sourceTree = "<group>"; };
+		81BEA42F276D171D00059DCC /* APODServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODServiceDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +105,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81316318276D8A9A0028CADC /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				81316323276DA16D0028CADC /* ConfigServices.h */,
+				81316324276DA16D0028CADC /* ConfigServices.m */,
+				81316326276DAE070028CADC /* ConfigUseCases.h */,
+				81316327276DAE070028CADC /* ConfigUseCases.m */,
+				8131632D276DB7290028CADC /* Constants.h */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		81316319276D8B180028CADC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8131631D276D8D090028CADC /* AFNetworkingHttpManager.h */,
+				8131631E276D8D090028CADC /* AFNetworkingHttpManager.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		81316329276DB4620028CADC /* Dtos */ = {
+			isa = PBXGroup;
+			children = (
+				8131632A276DB4D20028CADC /* AstronomyPictureResponse.h */,
+				8131632B276DB4D20028CADC /* AstronomyPictureResponse.m */,
+			);
+			path = Dtos;
+			sourceTree = "<group>";
+		};
 		81608A54276AFBFF00AF2C88 = {
 			isa = PBXGroup;
 			children = (
@@ -104,13 +158,16 @@
 		81608A5F276AFBFF00AF2C88 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
+				81316319276D8B180028CADC /* Utils */,
+				81316318276D8A9A0028CADC /* Configurations */,
+				81BEA42D276BF76700059DCC /* Gateways */,
+				81608A99276AFD0E00AF2C88 /* Services */,
+				81608A96276AFC4300AF2C88 /* ViewControllers */,
+				81608A95276AFC2900AF2C88 /* Domain */,
 				81608A60276AFBFF00AF2C88 /* AppDelegate.h */,
 				81608A61276AFBFF00AF2C88 /* AppDelegate.m */,
 				81608A63276AFBFF00AF2C88 /* SceneDelegate.h */,
 				81608A64276AFBFF00AF2C88 /* SceneDelegate.m */,
-				81608A66276AFBFF00AF2C88 /* ViewController.h */,
-				81608A67276AFBFF00AF2C88 /* ViewController.m */,
-				81608A69276AFBFF00AF2C88 /* Main.storyboard */,
 				81608A6C276AFC0000AF2C88 /* Assets.xcassets */,
 				81608A6E276AFC0000AF2C88 /* LaunchScreen.storyboard */,
 				81608A71276AFC0000AF2C88 /* Info.plist */,
@@ -134,6 +191,70 @@
 				81608A88276AFC0000AF2C88 /* APODUITestsLaunchTests.m */,
 			);
 			path = APODUITests;
+			sourceTree = "<group>";
+		};
+		81608A95276AFC2900AF2C88 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				81608A98276AFC9800AF2C88 /* UseCases */,
+				81608A97276AFC7C00AF2C88 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		81608A96276AFC4300AF2C88 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				81608A9F276B0D0200AF2C88 /* HomeViewController.h */,
+				81608AA0276B0D0200AF2C88 /* HomeViewController.m */,
+				81608AA1276B0D0200AF2C88 /* HomeViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		81608A97276AFC7C00AF2C88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				81608AA4276B122F00AF2C88 /* AstronomyPicture.h */,
+				81608AA5276B122F00AF2C88 /* AstronomyPicture.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		81608A98276AFC9800AF2C88 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				81BEA425276BF35A00059DCC /* RetrievePicturesWeek.h */,
+				81BEA426276BF35A00059DCC /* RetrievePicturesWeek.m */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		81608A99276AFD0E00AF2C88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				81BEA429276BF73000059DCC /* APOD */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		81BEA429276BF73000059DCC /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				81316329276DB4620028CADC /* Dtos */,
+				81BEA42A276BF74C00059DCC /* APODService.h */,
+				81BEA42B276BF74C00059DCC /* APODService.m */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		81BEA42D276BF76700059DCC /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				81BEA42F276D171D00059DCC /* APODServiceDelegate.h */,
+				81316320276D8DF80028CADC /* HttpRequestManagerDelegate.h */,
+			);
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +362,7 @@
 			files = (
 				81608A70276AFC0000AF2C88 /* LaunchScreen.storyboard in Resources */,
 				81608A6D276AFC0000AF2C88 /* Assets.xcassets in Resources */,
-				81608A6B276AFBFF00AF2C88 /* Main.storyboard in Resources */,
+				81608AA3276B0D0200AF2C88 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +387,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81608A68276AFBFF00AF2C88 /* ViewController.m in Sources */,
 				81608A62276AFBFF00AF2C88 /* AppDelegate.m in Sources */,
 				81608A73276AFC0000AF2C88 /* main.m in Sources */,
+				81316325276DA16D0028CADC /* ConfigServices.m in Sources */,
+				81BEA427276BF35A00059DCC /* RetrievePicturesWeek.m in Sources */,
+				8131632C276DB4D20028CADC /* AstronomyPictureResponse.m in Sources */,
+				8131631F276D8D090028CADC /* AFNetworkingHttpManager.m in Sources */,
 				81608A65276AFBFF00AF2C88 /* SceneDelegate.m in Sources */,
+				81608AA2276B0D0200AF2C88 /* HomeViewController.m in Sources */,
+				81608AA6276B122F00AF2C88 /* AstronomyPicture.m in Sources */,
+				81BEA42C276BF74C00059DCC /* APODService.m in Sources */,
+				81316328276DAE070028CADC /* ConfigUseCases.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		81608A69276AFBFF00AF2C88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81608A6A276AFBFF00AF2C88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81608A6E276AFC0000AF2C88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -449,7 +569,6 @@
 				INFOPLIST_FILE = APOD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -476,7 +595,6 @@
 				INFOPLIST_FILE = APOD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

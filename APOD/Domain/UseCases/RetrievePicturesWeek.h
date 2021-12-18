@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedIntance;
 - (id) initWithService:(id<APODServiceDelegate>)service;
-- (AstronomyPicture *) getPicturesFrom:(NSString *)startDate until:(NSString *)endDate;
+- (void) getPicturesFrom:(NSString *)startDate until:(NSString *)endDate
+                onSuccess:(void (^ _Nonnull)(NSArray<AstronomyPicture *> * _Nonnull response))success onFailure:(void (^ _Nonnull)(NSError * _Nonnull error))failure;
 
 @end
 

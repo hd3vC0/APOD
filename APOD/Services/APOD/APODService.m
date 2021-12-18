@@ -8,6 +8,7 @@
 #import "APODService.h"
 #import "../../Gateways/HttpRequestManagerDelegate.h"
 #import "../../Configurations/Constants.h"
+#import "Dtos/AstronomyPictureResponse.h"
 
 @implementation APODService
 
@@ -26,13 +27,25 @@
     return(self);
 }
 
-- (void)getPicturesFrom:(nonnull NSString *)startDate until:(nonnull NSString *)endDate {
+- (void)getPicturesFrom:(nonnull NSString *)startDate until:(nonnull NSString *)endDate onSuccess:(void (^ _Nonnull)(NSArray * _Nonnull))success onFailure:(void (^ _Nonnull)(NSError * _Nonnull))failure{
     
-    [[self manager]makeRequestTo:API_ENDPOINT withMethod:MethodGET onSuccess:^(id  _Nonnull response) {
-            NSLog(@"OK Success");
-        } onFailure:^(id  _Nonnull error) {
-            NSLog(@":( Failure");
-        }];
+    NSDictionary * parameters = @{@"api_key": API_KEY, @"start_date": startDate, @"end_date":endDate};
+    
+    [[self manager] makeRequestTo:API_ENDPOINT withMethod:MethodGET withParameters:parameters onSuccess:^(id  _Nonnull response) {        
+        
+        NSMutableArray * res = [[NSMutableArray alloc] init];
+        
+        for(id value in response){
+            AstronomyPictureResponse * item = [[AstronomyPictureResponse alloc] init];
+            [item setValuesForKeysWithDictionary:value];
+            [res addObject:item];
+        }
+        
+        success(res);
+        
+    } onFailure:^(NSError * _Nullable error) {
+        failure(error);
+    }];
 }
 
 @end

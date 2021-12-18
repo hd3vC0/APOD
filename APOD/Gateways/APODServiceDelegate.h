@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "../Domain/Models/AstronomyPicture.h"
+#import "../Services/APOD/Dtos/AstronomyPictureResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @required
 
-- (void)getPicturesFrom:(NSString *)startDate until:(NSString *)endDate;
+- (void)getPicturesFrom:(NSString *)startDate until:(NSString *)endDate onSuccess:(void (^ _Nonnull)(NSArray * response))success onFailure:(void (^_Nonnull)(NSError * error))failure;
 
 @end
 

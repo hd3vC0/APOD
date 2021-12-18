@@ -7,7 +7,7 @@
 
 #import "ConfigServices.h"
 #import "../Services/APOD/APODService.h"
-#import "../Utils/AFNetworkingHttpManager.h"
+#import "../Repository/AFNetworkingHttpManager.h"
 
 @implementation ConfigServices
 

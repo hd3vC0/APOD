@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53BE30ED8A2E4FB4AA7ECB61 /* Pods_APOD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3625294DE4D6B7FA717233AF /* Pods_APOD.framework */; };
 		8131631F276D8D090028CADC /* AFNetworkingHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8131631E276D8D090028CADC /* AFNetworkingHttpManager.m */; };
 		81316325276DA16D0028CADC /* ConfigServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316324276DA16D0028CADC /* ConfigServices.m */; };
 		81316328276DAE070028CADC /* ConfigUseCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316327276DAE070028CADC /* ConfigUseCases.m */; };
@@ -24,6 +25,8 @@
 		81608AA6276B122F00AF2C88 /* AstronomyPicture.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608AA5276B122F00AF2C88 /* AstronomyPicture.m */; };
 		81BEA427276BF35A00059DCC /* RetrievePicturesWeek.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA426276BF35A00059DCC /* RetrievePicturesWeek.m */; };
 		81BEA42C276BF74C00059DCC /* APODService.m in Sources */ = {isa = PBXBuildFile; fileRef = 81BEA42B276BF74C00059DCC /* APODService.m */; };
+		91DFC9C241E95F3CDCA21254 /* Pods_APOD_APODUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA07745D3892BF9427EC6D62 /* Pods_APOD_APODUITests.framework */; };
+		CD200C70EEF0555051C9523A /* Pods_APODTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E38507D999D1B938F7B5976 /* Pods_APODTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E38507D999D1B938F7B5976 /* Pods_APODTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APODTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3625294DE4D6B7FA717233AF /* Pods_APOD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APOD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8B02CA0F41911E75D93ABA /* Pods-APOD-APODUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOD-APODUITests.debug.xcconfig"; path = "Target Support Files/Pods-APOD-APODUITests/Pods-APOD-APODUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4EAB0BBA2D4A86CA1CF96073 /* Pods-APODTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODTests.debug.xcconfig"; path = "Target Support Files/Pods-APODTests/Pods-APODTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7826894C934D0C57FCFB80DF /* Pods-APOD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOD.debug.xcconfig"; path = "Target Support Files/Pods-APOD/Pods-APOD.debug.xcconfig"; sourceTree = "<group>"; };
+		7909C7237619373BE2A278CE /* Pods-APOD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOD.release.xcconfig"; path = "Target Support Files/Pods-APOD/Pods-APOD.release.xcconfig"; sourceTree = "<group>"; };
 		8131631D276D8D090028CADC /* AFNetworkingHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetworkingHttpManager.h; sourceTree = "<group>"; };
 		8131631E276D8D090028CADC /* AFNetworkingHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingHttpManager.m; sourceTree = "<group>"; };
 		81316320276D8DF80028CADC /* HttpRequestManagerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequestManagerDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +87,9 @@
 		81BEA42A276BF74C00059DCC /* APODService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODService.h; sourceTree = "<group>"; };
 		81BEA42B276BF74C00059DCC /* APODService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APODService.m; sourceTree = "<group>"; };
 		81BEA42F276D171D00059DCC /* APODServiceDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APODServiceDelegate.h; sourceTree = "<group>"; };
+		8F2FD49EADC40C97EF26C30C /* Pods-APODTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APODTests.release.xcconfig"; path = "Target Support Files/Pods-APODTests/Pods-APODTests.release.xcconfig"; sourceTree = "<group>"; };
+		96ED5B6176021DD5A4321B58 /* Pods-APOD-APODUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APOD-APODUITests.release.xcconfig"; path = "Target Support Files/Pods-APOD-APODUITests/Pods-APOD-APODUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA07745D3892BF9427EC6D62 /* Pods_APOD_APODUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APOD_APODUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BE30ED8A2E4FB4AA7ECB61 /* Pods_APOD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD200C70EEF0555051C9523A /* Pods_APODTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DFC9C241E95F3CDCA21254 /* Pods_APOD_APODUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,13 +132,13 @@
 			path = Configurations;
 			sourceTree = "<group>";
 		};
-		81316319276D8B180028CADC /* Utils */ = {
+		81316319276D8B180028CADC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				8131631D276D8D090028CADC /* AFNetworkingHttpManager.h */,
 				8131631E276D8D090028CADC /* AFNetworkingHttpManager.m */,
 			);
-			path = Utils;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		81316329276DB4620028CADC /* Dtos */ = {
@@ -135,6 +150,13 @@
 			path = Dtos;
 			sourceTree = "<group>";
 		};
+		81316331276E348F0028CADC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		81608A54276AFBFF00AF2C88 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +164,8 @@
 				81608A7B276AFC0000AF2C88 /* APODTests */,
 				81608A85276AFC0000AF2C88 /* APODUITests */,
 				81608A5E276AFBFF00AF2C88 /* Products */,
+				BC618DD07AAD3058233E6A32 /* Pods */,
+				CF14FD0CF9DE7ABF4CFAF260 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,7 +182,7 @@
 		81608A5F276AFBFF00AF2C88 /* APOD */ = {
 			isa = PBXGroup;
 			children = (
-				81316319276D8B180028CADC /* Utils */,
+				81316319276D8B180028CADC /* Repository */,
 				81316318276D8A9A0028CADC /* Configurations */,
 				81BEA42D276BF76700059DCC /* Gateways */,
 				81608A99276AFD0E00AF2C88 /* Services */,
@@ -241,6 +265,7 @@
 		81BEA429276BF73000059DCC /* APOD */ = {
 			isa = PBXGroup;
 			children = (
+				81316331276E348F0028CADC /* Category */,
 				81316329276DB4620028CADC /* Dtos */,
 				81BEA42A276BF74C00059DCC /* APODService.h */,
 				81BEA42B276BF74C00059DCC /* APODService.m */,
@@ -257,6 +282,29 @@
 			path = Gateways;
 			sourceTree = "<group>";
 		};
+		BC618DD07AAD3058233E6A32 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7826894C934D0C57FCFB80DF /* Pods-APOD.debug.xcconfig */,
+				7909C7237619373BE2A278CE /* Pods-APOD.release.xcconfig */,
+				4A8B02CA0F41911E75D93ABA /* Pods-APOD-APODUITests.debug.xcconfig */,
+				96ED5B6176021DD5A4321B58 /* Pods-APOD-APODUITests.release.xcconfig */,
+				4EAB0BBA2D4A86CA1CF96073 /* Pods-APODTests.debug.xcconfig */,
+				8F2FD49EADC40C97EF26C30C /* Pods-APODTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF14FD0CF9DE7ABF4CFAF260 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3625294DE4D6B7FA717233AF /* Pods_APOD.framework */,
+				DA07745D3892BF9427EC6D62 /* Pods_APOD_APODUITests.framework */,
+				0E38507D999D1B938F7B5976 /* Pods_APODTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -264,9 +312,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81608A8C276AFC0000AF2C88 /* Build configuration list for PBXNativeTarget "APOD" */;
 			buildPhases = (
+				9EC04054846AA75C155BA3E7 /* [CP] Check Pods Manifest.lock */,
 				81608A59276AFBFF00AF2C88 /* Sources */,
 				81608A5A276AFBFF00AF2C88 /* Frameworks */,
 				81608A5B276AFBFF00AF2C88 /* Resources */,
+				1CD5EE8A5C844F1296711165 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +331,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81608A8F276AFC0000AF2C88 /* Build configuration list for PBXNativeTarget "APODTests" */;
 			buildPhases = (
+				2DDB78CAD387907F3C97185D /* [CP] Check Pods Manifest.lock */,
 				81608A74276AFC0000AF2C88 /* Sources */,
 				81608A75276AFC0000AF2C88 /* Frameworks */,
 				81608A76276AFC0000AF2C88 /* Resources */,
@@ -299,9 +350,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81608A92276AFC0000AF2C88 /* Build configuration list for PBXNativeTarget "APODUITests" */;
 			buildPhases = (
+				A83A45EDEB3FA57689EDDE27 /* [CP] Check Pods Manifest.lock */,
 				81608A7E276AFC0000AF2C88 /* Sources */,
 				81608A7F276AFC0000AF2C88 /* Frameworks */,
 				81608A80276AFC0000AF2C88 /* Resources */,
+				0BF166F6D34D55481669DB5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,6 +434,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF166F6D34D55481669DB5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APOD-APODUITests/Pods-APOD-APODUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APOD-APODUITests/Pods-APOD-APODUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APOD-APODUITests/Pods-APOD-APODUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CD5EE8A5C844F1296711165 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APOD/Pods-APOD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-APOD/Pods-APOD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-APOD/Pods-APOD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DDB78CAD387907F3C97185D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APODTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC04054846AA75C155BA3E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APOD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A83A45EDEB3FA57689EDDE27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APOD-APODUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81608A59276AFBFF00AF2C88 /* Sources */ = {
@@ -559,6 +715,7 @@
 		};
 		81608A8D276AFC0000AF2C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7826894C934D0C57FCFB80DF /* Pods-APOD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -585,6 +742,7 @@
 		};
 		81608A8E276AFC0000AF2C88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7909C7237619373BE2A278CE /* Pods-APOD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -611,6 +769,7 @@
 		};
 		81608A90276AFC0000AF2C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EAB0BBA2D4A86CA1CF96073 /* Pods-APODTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -634,6 +793,7 @@
 		};
 		81608A91276AFC0000AF2C88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F2FD49EADC40C97EF26C30C /* Pods-APODTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -657,6 +817,7 @@
 		};
 		81608A93276AFC0000AF2C88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A8B02CA0F41911E75D93ABA /* Pods-APOD-APODUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -678,6 +839,7 @@
 		};
 		81608A94276AFC0000AF2C88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96ED5B6176021DD5A4321B58 /* Pods-APOD-APODUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString * title;
 @property (nonatomic, strong) NSString * thumbnail;
 @property (nonatomic, strong) NSString * picture;
-@property (nonatomic, strong) NSString * description;
+@property (nonatomic, strong) NSString * textDescription;
 @property (nonatomic, strong) NSString * date;
 @property (nonatomic, strong) NSString * copyright;
 

@@ -13,11 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 #define MethodGET  @"GET"
 
 @protocol HttpRequestManagerDelegate <NSObject>
-
+@optional
 -(void) initializer;
--(void) makeRequestTo:(NSString *)url
-            withMethod:(NSString *)method
-            onSuccess:(void (^_Nullable)(id response))success onFailure:(void (^_Nonnull)(id error))failure;
+@required
+-(void) makeRequestTo:(NSString * _Nonnull)url
+            withMethod:(NSString * _Nonnull)method
+            withParameters:(NSDictionary * _Nullable)parameters
+            onSuccess:(void (^_Nullable)(id response))success onFailure:(void (^_Nonnull)(NSError * _Nullable error))failure;
 
 @end
 

@@ -6,10 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DatePickerDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@interface HomeViewController : UIViewController <UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, DatePickerDelegate>
 
 @end
 

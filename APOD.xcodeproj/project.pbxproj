@@ -12,6 +12,13 @@
 		81316325276DA16D0028CADC /* ConfigServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316324276DA16D0028CADC /* ConfigServices.m */; };
 		81316328276DAE070028CADC /* ConfigUseCases.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316327276DAE070028CADC /* ConfigUseCases.m */; };
 		8131632C276DB4D20028CADC /* AstronomyPictureResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8131632B276DB4D20028CADC /* AstronomyPictureResponse.m */; };
+		8131633B276E86EC0028CADC /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316339276E86EC0028CADC /* PictureCollectionViewCell.m */; };
+		8131633C276E86EC0028CADC /* PictureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8131633A276E86EC0028CADC /* PictureCollectionViewCell.xib */; };
+		81316343276F43020028CADC /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81316341276F43020028CADC /* PreviewViewController.m */; };
+		81316344276F43020028CADC /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81316342276F43020028CADC /* PreviewViewController.xib */; };
+		8131634D276F71DB0028CADC /* RetrievePictureDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8131634C276F71DB0028CADC /* RetrievePictureDay.m */; };
+		81316351276F8FCB0028CADC /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8131634F276F8FCB0028CADC /* DatePickerViewController.m */; };
+		81316352276F8FCB0028CADC /* DatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81316350276F8FCB0028CADC /* DatePickerViewController.xib */; };
 		81608A62276AFBFF00AF2C88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A61276AFBFF00AF2C88 /* AppDelegate.m */; };
 		81608A65276AFBFF00AF2C88 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81608A64276AFBFF00AF2C88 /* SceneDelegate.m */; };
 		81608A6D276AFC0000AF2C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81608A6C276AFC0000AF2C88 /* Assets.xcassets */; };
@@ -63,6 +70,18 @@
 		8131632A276DB4D20028CADC /* AstronomyPictureResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AstronomyPictureResponse.h; sourceTree = "<group>"; };
 		8131632B276DB4D20028CADC /* AstronomyPictureResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AstronomyPictureResponse.m; sourceTree = "<group>"; };
 		8131632D276DB7290028CADC /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		81316338276E86EC0028CADC /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
+		81316339276E86EC0028CADC /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
+		8131633A276E86EC0028CADC /* PictureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionViewCell.xib; sourceTree = "<group>"; };
+		81316340276F43020028CADC /* PreviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		81316341276F43020028CADC /* PreviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
+		81316342276F43020028CADC /* PreviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewViewController.xib; sourceTree = "<group>"; };
+		8131634B276F71DB0028CADC /* RetrievePictureDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RetrievePictureDay.h; sourceTree = "<group>"; };
+		8131634C276F71DB0028CADC /* RetrievePictureDay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetrievePictureDay.m; sourceTree = "<group>"; };
+		8131634E276F8FCB0028CADC /* DatePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		8131634F276F8FCB0028CADC /* DatePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
+		81316350276F8FCB0028CADC /* DatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerViewController.xib; sourceTree = "<group>"; };
+		81316353276F92FF0028CADC /* DatePickerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatePickerDelegate.h; sourceTree = "<group>"; };
 		81608A5D276AFBFF00AF2C88 /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81608A60276AFBFF00AF2C88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81608A61276AFBFF00AF2C88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -150,13 +169,6 @@
 			path = Dtos;
 			sourceTree = "<group>";
 		};
-		81316331276E348F0028CADC /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
 		81608A54276AFBFF00AF2C88 = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +244,16 @@
 				81608A9F276B0D0200AF2C88 /* HomeViewController.h */,
 				81608AA0276B0D0200AF2C88 /* HomeViewController.m */,
 				81608AA1276B0D0200AF2C88 /* HomeViewController.xib */,
+				81316338276E86EC0028CADC /* PictureCollectionViewCell.h */,
+				81316339276E86EC0028CADC /* PictureCollectionViewCell.m */,
+				8131633A276E86EC0028CADC /* PictureCollectionViewCell.xib */,
+				81316340276F43020028CADC /* PreviewViewController.h */,
+				81316341276F43020028CADC /* PreviewViewController.m */,
+				81316342276F43020028CADC /* PreviewViewController.xib */,
+				8131634E276F8FCB0028CADC /* DatePickerViewController.h */,
+				8131634F276F8FCB0028CADC /* DatePickerViewController.m */,
+				81316350276F8FCB0028CADC /* DatePickerViewController.xib */,
+				81316353276F92FF0028CADC /* DatePickerDelegate.h */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +272,8 @@
 			children = (
 				81BEA425276BF35A00059DCC /* RetrievePicturesWeek.h */,
 				81BEA426276BF35A00059DCC /* RetrievePicturesWeek.m */,
+				8131634B276F71DB0028CADC /* RetrievePictureDay.h */,
+				8131634C276F71DB0028CADC /* RetrievePictureDay.m */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -265,7 +289,6 @@
 		81BEA429276BF73000059DCC /* APOD */ = {
 			isa = PBXGroup;
 			children = (
-				81316331276E348F0028CADC /* Category */,
 				81316329276DB4620028CADC /* Dtos */,
 				81BEA42A276BF74C00059DCC /* APODService.h */,
 				81BEA42B276BF74C00059DCC /* APODService.m */,
@@ -413,7 +436,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81316352276F8FCB0028CADC /* DatePickerViewController.xib in Resources */,
 				81608A70276AFC0000AF2C88 /* LaunchScreen.storyboard in Resources */,
+				81316344276F43020028CADC /* PreviewViewController.xib in Resources */,
+				8131633C276E86EC0028CADC /* PictureCollectionViewCell.xib in Resources */,
 				81608A6D276AFC0000AF2C88 /* Assets.xcassets in Resources */,
 				81608AA3276B0D0200AF2C88 /* HomeViewController.xib in Resources */,
 			);
@@ -543,16 +569,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81316343276F43020028CADC /* PreviewViewController.m in Sources */,
 				81608A62276AFBFF00AF2C88 /* AppDelegate.m in Sources */,
+				8131633B276E86EC0028CADC /* PictureCollectionViewCell.m in Sources */,
 				81608A73276AFC0000AF2C88 /* main.m in Sources */,
 				81316325276DA16D0028CADC /* ConfigServices.m in Sources */,
 				81BEA427276BF35A00059DCC /* RetrievePicturesWeek.m in Sources */,
 				8131632C276DB4D20028CADC /* AstronomyPictureResponse.m in Sources */,
 				8131631F276D8D090028CADC /* AFNetworkingHttpManager.m in Sources */,
 				81608A65276AFBFF00AF2C88 /* SceneDelegate.m in Sources */,
+				8131634D276F71DB0028CADC /* RetrievePictureDay.m in Sources */,
 				81608AA2276B0D0200AF2C88 /* HomeViewController.m in Sources */,
 				81608AA6276B122F00AF2C88 /* AstronomyPicture.m in Sources */,
 				81BEA42C276BF74C00059DCC /* APODService.m in Sources */,
+				81316351276F8FCB0028CADC /* DatePickerViewController.m in Sources */,
 				81316328276DAE070028CADC /* ConfigUseCases.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

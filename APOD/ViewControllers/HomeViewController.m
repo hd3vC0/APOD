@@ -10,33 +10,57 @@
 #import "UIKit+AFNetworking.h"
 #import "../ViewControllers/PictureCollectionViewCell.h"
 #import "PreviewViewController.h"
+#import "../Domain/UseCases/RetrievePictureDay.h"
+#import "DatePickerViewController.h"
+
 
 @interface HomeViewController ()
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionViewController;
 @property (nonatomic, strong) NSArray<AstronomyPicture *> * data;
+@property (nonatomic, strong) NSDate *today;
 @property (nonatomic, strong) NSString * startDate;
 @property (nonatomic, strong) NSString * endDate;
+@property (nonatomic, strong) NSDateFormatter * formatter;
 
 - (void) initialize;
+- (void) showPreview:(AstronomyPicture *)astronomyPicture;
+- (void) getPictureOfDay:(NSString *)day;
 @end
 
 @implementation HomeViewController
 
-- (void)initialize{
+- (void)initialize{    
     [self setTitle:@"APOD"];
-    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"yyyy-MM-dd"];
-    NSDate *today = [NSDate date];
-    [self setEndDate:[formatter stringFromDate:today]];
-    NSLog(@"%@", self.endDate);
+    self.formatter = [[NSDateFormatter alloc]init];
+    [self.formatter setDateFormat:@"yyyy-MM-dd"];
+    self.today = [NSDate date];
+    [self setEndDate:[self.formatter stringFromDate:self.today]];
     
     NSCalendar * calendar = [NSCalendar currentCalendar];
-    NSDate * lastweek = [calendar dateByAddingUnit:NSCalendarUnitDay value:-7 toDate:today options:0];
+    NSDate * lastweek = [calendar dateByAddingUnit:NSCalendarUnitDay value:-7 toDate:self.today options:0];
     
-    [self setStartDate:[formatter stringFromDate:lastweek]];  
+    [self setStartDate:[self.formatter stringFromDate:lastweek]];
 
 }
+
+- (void)getPictureOfDay:(NSString *)date {
+    RetrievePictureDay *retrievePictureDay = [RetrievePictureDay sharedIntance];
+    [retrievePictureDay getPictureOfDay:date onSuccess:^(AstronomyPicture * _Nonnull response) {
+        
+        [self showPreview:response];
+        
+        } onFailure:^(NSError * _Nonnull error) {
+            NSLog(@" Error:\n %@", error);
+        }];
+}
+
 - (IBAction)showImageDay:(id)sender {
+    
+    DatePickerViewController *datePicker = [[DatePickerViewController    alloc] initWithNibName:@"DatePickerViewController" bundle:nil];
+    datePicker.delegate = self;
+    datePicker.maximunDate = self.today;
+    [self.navigationController presentViewController:datePicker animated:TRUE completion:nil];
+    
 }
 
 - (void)viewDidLoad {
@@ -92,10 +116,17 @@
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"Seleccionaste item index %@",indexPath);
+    [self showPreview:[self.data objectAtIndex:indexPath.row]];
+    
+}
+
+- (void)showPreview:(AstronomyPicture *)astronomyPicture{
     PreviewViewController *preview = [[PreviewViewController alloc] initWithNibName:@"PreviewViewController" bundle:nil];
-    [preview setAstronomyPicture:[self.data objectAtIndex:indexPath.row]];
+    [preview setAstronomyPicture:astronomyPicture];
     [self.navigationController presentViewController:preview animated:TRUE completion:nil];
 }
 
+- (void)onDone:(NSDate *)date {
+    [self getPictureOfDay:[self.formatter stringFromDate:date]];
+}
 @end

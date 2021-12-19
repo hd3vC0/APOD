@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)getPicturesFrom:(NSString *)startDate until:(NSString *)endDate onSuccess:(void (^ _Nonnull)(NSArray * response))success onFailure:(void (^_Nonnull)(NSError * error))failure;
 
+- (void)getPictureOfDay:(NSString *)day onSuccess:(void (^ _Nonnull)(NSDictionary * response))success onFailure:(void (^_Nonnull)(NSError * error))failure;
+
 @end
 
 NS_ASSUME_NONNULL_END

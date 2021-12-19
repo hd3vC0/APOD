@@ -48,4 +48,18 @@
     }];
 }
 
+-(void)getPictureOfDay:(NSString *)day onSuccess:(void (^)(NSDictionary * _Nonnull))success onFailure:(void (^)(NSError * _Nonnull))failure{
+    
+    NSDictionary * parameters = @{@"api_key": API_KEY, @"date": day};
+    
+    [[self manager] makeRequestTo:API_ENDPOINT withMethod:MethodGET withParameters:parameters onSuccess:^(id  _Nonnull response) {
+        
+        success((NSDictionary *)response);
+        
+    } onFailure:^(NSError * _Nullable error) {
+        failure(error);
+    }];
+    
+}
+
 @end

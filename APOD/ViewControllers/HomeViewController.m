@@ -101,15 +101,9 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     float itemXLine = 3.0;
-    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
-    
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
-    
-   if(UIInterfaceOrientationIsLandscape(orientation)){
-        screenWidth = screenRect.size.height;
-    }
-    
+
     if(screenWidth >= 768){
         itemXLine = 5.0;
     }

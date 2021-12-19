@@ -29,13 +29,12 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="825-dV-NMq">
-                    <rect key="frame" x="118.5" y="795" width="177" height="45"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="825-dV-NMq">
+                    <rect key="frame" x="103" y="795" width="208" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="4IO-SO-yG9"/>
                     </constraints>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Show picture of the day" cornerStyle="capsule"/>
+                    <buttonConfiguration key="configuration" style="filled" image="calendar" catalog="system" title="Show picture of the day" imagePadding="10" cornerStyle="capsule"/>
                     <connections>
                         <action selector="showImageDay:" destination="-1" eventType="touchUpInside" id="NbK-xI-UTR"/>
                     </connections>
@@ -60,4 +59,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </view>
     </objects>
+    <resources>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+    </resources>
 </document>

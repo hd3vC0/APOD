@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreviewViewController">
             <connections>
                 <outlet property="date" destination="2NA-n0-FSp" id="isV-d6-dbU"/>
+                <outlet property="downloadIndicator" destination="faK-qE-Eqa" id="0pg-cM-QwY"/>
                 <outlet property="imagePreview" destination="Ce4-ch-2r9" id="DAY-nW-FnC"/>
                 <outlet property="textDescription" destination="QCn-bt-sJ0" id="aJL-Qm-3ch"/>
                 <outlet property="textTitle" destination="I0L-Tr-rLY" id="zi0-sM-bjS"/>
@@ -35,13 +36,13 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YYYY-MM-DD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NA-n0-FSp">
-                    <rect key="frame" x="20" y="481" width="374" height="14"/>
+                    <rect key="frame" x="20" y="481" width="374" height="13.5"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCn-bt-sJ0">
-                    <rect key="frame" x="20" y="503" width="374" height="93"/>
+                    <rect key="frame" x="20" y="502.5" width="374" height="93"/>
                     <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <nil key="textColor"/>
@@ -56,11 +57,30 @@
                         <action selector="closeButton:" destination="-1" eventType="touchUpInside" id="LYv-fg-TRb"/>
                     </connections>
                 </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="faK-qE-Eqa">
+                    <rect key="frame" x="20" y="60" width="185" height="20.5"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qPP-rZ-q1X">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20.5"/>
+                            <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Downloading picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2f-r3-t9T">
+                            <rect key="frame" x="28" y="0.0" width="157" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="a99-vc-nLk"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="2NA-n0-FSp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="39i-1b-dSV"/>
+                <constraint firstItem="faK-qE-Eqa" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="3vG-PW-0Tw"/>
                 <constraint firstItem="I0L-Tr-rLY" firstAttribute="top" secondItem="Ce4-ch-2r9" secondAttribute="bottom" constant="19" id="D9S-S1-yyL"/>
                 <constraint firstItem="Ce4-ch-2r9" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="DDD-qz-6WB"/>
                 <constraint firstItem="QCn-bt-sJ0" firstAttribute="top" secondItem="2NA-n0-FSp" secondAttribute="bottom" constant="8" symbolic="YES" id="Fb8-bR-R5o"/>
@@ -73,6 +93,7 @@
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="QCn-bt-sJ0" secondAttribute="trailing" constant="20" id="eyE-h5-JhV"/>
                 <constraint firstItem="6Sx-3f-qNf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="fGw-Dd-DNt"/>
                 <constraint firstItem="2NA-n0-FSp" firstAttribute="top" secondItem="I0L-Tr-rLY" secondAttribute="bottom" constant="5" id="pxM-md-CzS"/>
+                <constraint firstItem="faK-qE-Eqa" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="rWF-jo-E3z"/>
                 <constraint firstItem="Ce4-ch-2r9" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="rYH-bJ-F7p"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="83.705357142857139"/>

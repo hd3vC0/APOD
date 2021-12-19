@@ -31,6 +31,9 @@
     self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
+
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setTranslucent:NO];
     return YES;
 }
 

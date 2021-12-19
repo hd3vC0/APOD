@@ -33,8 +33,10 @@
     NSCalendar * calendar = [NSCalendar currentCalendar];
     NSDate * lastweek = [calendar dateByAddingUnit:NSCalendarUnitDay value:-7 toDate:today options:0];
     
-    [self setStartDate:[formatter stringFromDate:lastweek]];    
+    [self setStartDate:[formatter stringFromDate:lastweek]];  
 
+}
+- (IBAction)showImageDay:(id)sender {
 }
 
 - (void)viewDidLoad {

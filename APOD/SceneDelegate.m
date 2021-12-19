@@ -23,9 +23,12 @@
     self.window.windowScene = windowScene;
     UIViewController *vc = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
     
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
+    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+    [[UINavigationBar appearance] setTranslucent:NO];
 }
 
 

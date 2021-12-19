@@ -8,6 +8,7 @@
 #import "SceneDelegate.h"
 #import "ViewControllers/HomeViewController.h"
 #import <UIKit/UIKit.h>
+#import "Category/UINavigationController+Orientation.h"
 
 @interface SceneDelegate ()
 

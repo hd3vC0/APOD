@@ -104,12 +104,9 @@
     UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
     
     CGRect screenRect = [[UIScreen mainScreen] bounds];
-    CGFloat screenWidth;
+    CGFloat screenWidth = screenRect.size.width;
     
-    if(UIInterfaceOrientationIsPortrait(orientation)){
-        screenWidth = screenRect.size.width;
-    }
-    else{
+   if(UIInterfaceOrientationIsLandscape(orientation)){
         screenWidth = screenRect.size.height;
     }
     

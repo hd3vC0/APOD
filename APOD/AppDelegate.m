@@ -9,6 +9,7 @@
 #import "ViewControllers/HomeViewController.h"
 #import "Configurations/ConfigServices.h"
 #import "Configurations/ConfigUseCases.h"
+#import "Category/UINavigationController+Orientation.h"
 
 
 @interface AppDelegate ()

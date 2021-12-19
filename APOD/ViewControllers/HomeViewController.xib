@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
                 <outlet property="collectionViewController" destination="e6d-IW-Scd" id="sov-cH-XHg"/>
+                <outlet property="indicator" destination="Soi-0w-1lY" id="wEB-i4-0Zb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -39,16 +40,22 @@
                         <action selector="showImageDay:" destination="-1" eventType="touchUpInside" id="NbK-xI-UTR"/>
                     </connections>
                 </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Soi-0w-1lY">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="e6d-IW-Scd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="5Z9-mp-JkT"/>
+                <constraint firstItem="Soi-0w-1lY" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8F4-Kq-Cmn"/>
                 <constraint firstItem="e6d-IW-Scd" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="9U6-SL-gC2"/>
                 <constraint firstItem="e6d-IW-Scd" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="Du3-dV-wUi"/>
                 <constraint firstItem="825-dV-NMq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pgm-KY-C6A"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="825-dV-NMq" secondAttribute="bottom" constant="22" id="gAV-ae-aL0"/>
                 <constraint firstItem="e6d-IW-Scd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="p9t-Lx-Mdi"/>
+                <constraint firstItem="Soi-0w-1lY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wQ1-jZ-nn4"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="90.401785714285708"/>
         </view>

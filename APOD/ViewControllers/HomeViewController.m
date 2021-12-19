@@ -21,6 +21,7 @@
 @property (nonatomic, strong) NSString * startDate;
 @property (nonatomic, strong) NSString * endDate;
 @property (nonatomic, strong) NSDateFormatter * formatter;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 - (void) initialize;
 - (void) showPreview:(AstronomyPicture *)astronomyPicture;
@@ -73,9 +74,11 @@
     
     RetrievePicturesWeek * retrievePictureWeek = [RetrievePicturesWeek sharedIntance];
     [retrievePictureWeek getPicturesFrom:self.startDate until:self.endDate onSuccess:^(NSArray<AstronomyPicture *> * _Nonnull response) {
+        [self.indicator setHidden:TRUE];
         [self setData:response];
         [[self collectionViewController] reloadData];
     } onFailure:^(NSError * _Nonnull error) {
+        [self.indicator setHidden:TRUE];
         NSLog(@"%@", error);
 
     }];
@@ -98,13 +101,22 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     float itemXLine = 3.0;
+    UIDeviceOrientation orientation = [[UIDevice currentDevice] orientation];
+    
     CGRect screenRect = [[UIScreen mainScreen] bounds];
-    CGFloat screenWidth = screenRect.size.width;
+    CGFloat screenWidth;
+    
+    if(UIInterfaceOrientationIsPortrait(orientation)){
+        screenWidth = screenRect.size.width;
+    }
+    else{
+        screenWidth = screenRect.size.height;
+    }
     
     if(screenWidth >= 768){
-        itemXLine = 4.0;
+        itemXLine = 5.0;
     }
-    float cellWidth = screenWidth / itemXLine;
+    float cellWidth = floorf(screenWidth / itemXLine);
     return CGSizeMake(cellWidth, cellWidth);
 }
 

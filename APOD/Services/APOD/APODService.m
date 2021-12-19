@@ -9,6 +9,7 @@
 #import "../../Gateways/HttpRequestManagerDelegate.h"
 #import "../../Configurations/Constants.h"
 #import "Dtos/AstronomyPictureResponse.h"
+#import "../../Domain/Models/AstronomyPicture.h"
 
 @implementation APODService
 
@@ -38,7 +39,15 @@
         for(id value in response){
             AstronomyPictureResponse * item = [[AstronomyPictureResponse alloc] init];
             [item setValuesForKeysWithDictionary:value];
-            [res addObject:item];
+            AstronomyPicture* temp = [[AstronomyPicture alloc]init];
+            [temp setTitle: item.title];
+            [temp setDate: item.date];
+            [temp setPicture: item.hdurl];
+            [temp setThumbnail: item.url];
+            [temp setTextDescription: item.explanation];
+            [temp setCopyright: item.copyright];
+
+            [res addObject:temp];
         }
         
         success(res);
@@ -48,13 +57,24 @@
     }];
 }
 
--(void)getPictureOfDay:(NSString *)day onSuccess:(void (^)(NSDictionary * _Nonnull))success onFailure:(void (^)(NSError * _Nonnull))failure{
+-(void)getPictureOfDay:(NSString *)day onSuccess:(void (^)(AstronomyPicture * _Nonnull))success onFailure:(void (^)(NSError * _Nonnull))failure{
     
     NSDictionary * parameters = @{@"api_key": API_KEY, @"date": day};
     
     [[self manager] makeRequestTo:API_ENDPOINT withMethod:MethodGET withParameters:parameters onSuccess:^(id  _Nonnull response) {
         
-        success((NSDictionary *)response);
+        AstronomyPictureResponse * value = [[AstronomyPictureResponse alloc]init];
+        [value setValuesForKeysWithDictionary:response];
+        
+        AstronomyPicture* item = [[AstronomyPicture alloc]init];
+        [item setTitle: value.title];
+        [item setDate: value.date];
+        [item setPicture: value.hdurl];
+        [item setThumbnail: value.url];
+        [item setTextDescription: value.explanation];
+        [item setCopyright: value.copyright];
+        
+        success(item);
         
     } onFailure:^(NSError * _Nullable error) {
         failure(error);

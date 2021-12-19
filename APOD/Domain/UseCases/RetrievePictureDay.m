@@ -26,20 +26,9 @@
 
 -(void)getPictureOfDay:(NSString *)day onSuccess:(void (^)(AstronomyPicture * _Nonnull))success onFailure:(void (^)(NSError * _Nonnull))failure{
     
-    [self.apodDelegate getPictureOfDay:day onSuccess:^(NSDictionary * _Nonnull response) {
+    [self.apodDelegate getPictureOfDay:day onSuccess:^(AstronomyPicture * _Nonnull response) {
         
-        AstronomyPictureResponse * value = [[AstronomyPictureResponse alloc]init];
-        [value setValuesForKeysWithDictionary:response];
-        
-        AstronomyPicture* item = [[AstronomyPicture alloc]init];
-        [item setTitle: value.title];
-        [item setDate: value.date];
-        [item setPicture: value.hdurl];
-        [item setThumbnail: value.url];
-        [item setTextDescription: value.explanation];
-        [item setCopyright: value.copyright];
-        
-        success(item);
+        success(response);
         
     } onFailure:^(NSError * _Nonnull error) {
         failure(error);

@@ -28,7 +28,8 @@
 -(void)getPicturesFrom:(NSString *)startDate until:(NSString *)endDate onSuccess:(void (^)(NSArray<AstronomyPicture *> * _Nonnull))success onFailure:(void (^)(NSError * _Nonnull))failure {
     
     [self.apodDelegate getPicturesFrom:startDate until:endDate onSuccess:^(NSArray * _Nonnull response) {
-        success(response);
+        NSArray * result = [[response reverseObjectEnumerator] allObjects];
+        success(result);
     } onFailure:^(NSError * _Nonnull error) {
         failure(error);
     }];

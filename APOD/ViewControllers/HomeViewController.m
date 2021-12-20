@@ -100,12 +100,12 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    float itemXLine = 3.0;
+    float itemXLine = 2.0;
     CGRect screenRect = [[UIScreen mainScreen] bounds];
     CGFloat screenWidth = screenRect.size.width;
 
     if(screenWidth >= 768){
-        itemXLine = 5.0;
+        itemXLine = 3.0;
     }
     float cellWidth = floorf(screenWidth / itemXLine);
     return CGSizeMake(cellWidth, cellWidth);

@@ -26,7 +26,7 @@
     UIImage *placeholder = [UIImage imageNamed:@"placeholder"];
     //[self.imagePreview setImageWithURL:[NSURL URLWithString:self.astronomyPicture.picture] placeholderImage:placeholder];
     
-    [self.imagePreview setImageWithURLRequest:[[NSURLRequest alloc]initWithURL:[NSURL URLWithString:self.astronomyPicture.picture]] placeholderImage:placeholder success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+    [self.imagePreview setImageWithURLRequest:[[NSURLRequest alloc]initWithURL:[NSURL URLWithString:self.astronomyPicture.thumbnail]] placeholderImage:placeholder success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
         [self imageDownloadCompleted];
         self.imagePreview.image = image;
     } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {        

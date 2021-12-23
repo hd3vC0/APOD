@@ -1,4 +1,7 @@
 # 🚀 APOD-SoyYO 🚀
+
+‼️  Proyecto versión en swift (https://github.com/hd3vC0/APOD-SoyYo-Swift)[https://github.com/hd3vC0/APOD-SoyYo-Swift] ‼️
+
 Prueba técnica
 
 # Dependencias:

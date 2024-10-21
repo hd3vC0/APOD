@@ -1,7 +1,7 @@
 # 🚀 APOD 🚀
 
 ‼️  Proyecto versión en swift [https://github.com/hd3vC0/APOD-Swift](https://github.com/hd3vC0/APOD-Swift) ‼️
-![preview](https://github.com/hd3vC0/APOD/blob/main/preview.GIF?raw=true)
+![preview](https://raw.githubusercontent.com/hd3vC0/APOD/refs/heads/main/preview.GIF)
 
 # Dependencias:
 - [Cocoapods](https://guides.cocoapods.org/using/getting-started.html)
